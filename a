@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main() {
+    double discount;
+    double price;
+    std::cout << "Pls enter the discount percentage" << std::endl;
+    std::cin >> discount;
+    std::cout << "Pls enter your price" << std::endl;
+    std::cin >> price;
+    discount = discount / 100;
+    price = price - (price * discount);
+    std::cout << "Your discounted price is " << price << std::endl;
+    return 0;
